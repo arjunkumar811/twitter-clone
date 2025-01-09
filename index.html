@@ -13,11 +13,11 @@
 </head>
 
 <body class="bg-black">
-    <div class="container flex text-white mx-auto pt-2">
+    <div class="container flex text-white mx-auto pt-2 ">
         <div class="first w-[80%]">
 
             <div
-                class="log invert my-4 mr-11 px-3 py-2 transition-all duration-200 hover:bg-gray-200 hover:rounded-full">
+                class="sticky top-0 log invert my-4 mr-11 px-3 py-2 transition-all duration-200 hover:bg-gray-200 hover:rounded-full">
                 <svg viewBox="0 0 24 24" aria-hidden="true" class="w-8 h-8 m-auto text-black">
                     <g>
                         <path
@@ -28,71 +28,97 @@
             </div>
 
 
-            <div class="side-bar flex justify-end">
-                <ul class="flex flex-col text-2xl space-y-3 px-11 font-bold">
+            <div class="side-bar flex">
+                <ul class="flex flex-col text-2xl space-y-3 px-11 font-bold fixed">
 
-                    <li
-                        class="flex justify-start items-center gap-3 px-3 py-2 hover:bg-slate-900 hover:rounded-full hover:w-fit">
-                        <span class="material-symbols-outlined"> home </span>Home
+                    <li class="flex justify-start items-center gap-3 
+                        px-3 py-2 hover:bg-slate-900 hover:rounded-full hover:w-fit">
+                        <span class="material-symbols-outlined"> home </span> <span class="hidden md:block">Home</span>
                     </li>
 
                     <li
                         class="flex justify-start items-center gap-3 px-3 py-2 hover:bg-slate-900 hover:rounded-full hover:w-fit">
-                        <span class="material-symbols-outlined"> notifications </span> Notification</li>
+                        <span class="material-symbols-outlined"> notifications </span> <span
+                            class="hidden md:block">Notification</span>
+                    </li>
 
                     <li
                         class="flex justify-start items-center gap-3 px-3 py-2 hover:bg-slate-900 hover:rounded-full hover:w-fit">
-                        <span class="material-symbols-outlined"> mail </span> Messages</li>
+                        <span class="material-symbols-outlined"> mail </span> <span
+                            class="hidden md:block ">Messages</span>
+                    </li>
 
                     <li
                         class="flex justify-start items-center gap-3 px-3 py-2 hover:bg-slate-900 hover:rounded-full hover:w-fit">
-                        <span class="material-symbols-outlined"> bookmark </span> Bookmark</li>
+                        <span class="material-symbols-outlined"> bookmark </span> <span
+                            class="hidden md:block">Bookmark</span>
+                    </li>
 
                     <li
                         class="flex justify-start items-center gap-3 px-3 py-2 hover:bg-slate-900 hover:rounded-full hover:w-fit">
-                        <span class="material-symbols-outlined"> work </span> Job</li>
+                        <span class="material-symbols-outlined"> work </span> <span class="hidden md:block">Job</span>
+                    </li>
 
                     <li
                         class="flex justify-start items-center gap-3 px-3 py-2 hover:bg-slate-900 hover:rounded-full hover:w-fit">
-                        <span class="material-symbols-outlined"> group </span> Community</li>
+                        <span class="material-symbols-outlined"> group </span> <span
+                            class="hidden md:block">Community</span>
+                    </li>
 
                     <li
                         class="flex justify-start items-center gap-3 px-3 py-2 hover:bg-slate-900 hover:rounded-full hover:w-fit">
-                        <span class="material-symbols-outlined"> workspace_premium </span> Premium</li>
+                        <span class="material-symbols-outlined"> workspace_premium </span> <span
+                            class="hidden md:block"> Premium</span>
+                    </li>
 
                     <li
                         class="flex justify-start items-center gap-3 px-3 py-2 hover:bg-slate-900 hover:rounded-full hover:w-fit">
-                        <span class="material-symbols-outlined"> person </span> Profile</li>
+                        <span class="material-symbols-outlined"> person </span> <span
+                            class="hidden md:block">Profile</span>
+                    </li>
 
                     <li
                         class="flex justify-start items-center gap-3 px-3 py-2 hover:bg-slate-900 hover:rounded-full hover:w-fit">
-                        <span class="material-symbols-outlined"> more_horiz </span> More</li>
+                        <span class="material-symbols-outlined"> more_horiz </span> <span
+                            class="hidden md:block">More</span>
+                    </li>
 
                     <li>
-                        <div class="w-34 p-3 rounded-3xl bg-[#eff3f4] flex justify-center cursor-pointer text-black text-sm ">
+                        <div
+                            class="w-34 p-3 rounded-3xl bg-[#eff3f4] flex justify-center cursor-pointer text-black text-sm ">
                             Post
                         </div>
                     </li>
                 </ul>
+
+
+
             </div>
 
         </div>
-        <div class="second w-full border-[1px] border-x-white border-y-black ">
-
-            <div class="top flex m-3">
-                <div class="left w-1/2  flex justify-center font-bold text-lg hover:underline cursor-pointer">For You
-                </div>
-                <div class="right w-1/2  flex justify-center font-bold text-lg hover:underline cursor-pointer">Following
-                </div>
-                <div class="settings">
-                    <span class="mx-2 mt-1 material-symbols-outlined">
-                        settings
-                    </span>
-                </div>
 
 
+
+        <div class="second w-full border-[1px] border-x-gray-500 border-y-black ">
+            <div class="bg-black backdrop-blur-3xl opacity-50 sticky top-0 border-gray-700 mb-1">
+                <div class="flex m-3">
+                    <div
+                        class="left w-1/2  flex justify-center font-bold text-lg hover:underline cursor-pointer text-white text-sm">
+                        For You
+                    </div>
+                    <div
+                        class="right w-1/2  flex justify-center font-bold text-lg hover:underline cursor-pointer text-sm text-white">
+                        Following
+                    </div>
+                    <div class="settings">
+                        <span class="mx-2 mt-1 material-symbols-outlined">
+                            settings
+                        </span>
+                    </div>
+
+                </div>
             </div>
-            <hr>
+            <div class="border-[1px] border-y-gray-600 "></div>
 
             <div class="what-happening flex gap-3">
                 <div class="img mx-2 my-2">
@@ -110,37 +136,43 @@
                 </span>
                 <span class="text-blue-600">Everyone can reply</span>
             </div>
-            <hr class="h-[0.1] text-gray-700 w-66 ml-10 mt-3">
+            <!-- <hr class="h-[0.1] text-gray-700 w-66 ml-10 mt-3"> -->
+            <div class="border-[1px] border-y-gray-600 ml-12 mt-1"></div>
 
             <div class="icons-top flex ml-10  text-gray-700 justify-center items-center">
 
                 <div class="icons flex gap-3  cursor-pointer mt-1">
                     <div class="gallary">
-                        <span class="material-symbols-outlined">
+                        <span
+                            class="material-symbols-outlined hover:bg-gray-900 hover:text-blue-500 hover:rounded-full p-2">
                             gallery_thumbnail
                         </span>
                     </div>
 
                     <div class="gif">
-                        <span class="material-symbols-outlined">
+                        <span
+                            class="material-symbols-outlined hover:bg-gray-900 hover:text-blue-500 hover:rounded-full p-2">
                             gif_box
                         </span>
                     </div>
 
                     <div class="location">
-                        <span class="material-symbols-outlined">
+                        <span
+                            class="material-symbols-outlined hover:bg-gray-900 hover:text-blue-500 hover:rounded-full p-2">
                             location_on
                         </span>
                     </div>
 
                     <div class="emojy">
-                        <span class="material-symbols-outlined">
+                        <span
+                            class="material-symbols-outlined hover:bg-gray-900 hover:text-blue-500 hover:rounded-full p-2">
                             add_reaction
                         </span>
                     </div>
 
                     <div class="schedule">
-                        <span class="material-symbols-outlined">
+                        <span
+                            class="material-symbols-outlined hover:bg-gray-900 hover:text-blue-500 hover:rounded-full p-2">
                             calendar_month
                         </span>
                     </div>
@@ -152,78 +184,229 @@
 
                 </div>
             </div>
-            <hr>
 
-            <div class="public-posts flex">
+
+            <div class="public-posts flex  border-[1px] border-y-gray-600 border-x-0">
                 <div class="public-logo ml-2 mt-2 w-16">
-                    <img class=" rounded-full cursor-pointer" src="https://pbs.twimg.com/profile_images/1856935099960627201/Wdgo4l9T_normal.jpg" alt="">
+                    <img class=" rounded-full cursor-pointer"
+                        src="https://pbs.twimg.com/profile_images/1599003507415166977/pRYwiTo3_normal.jpg" alt="">
+                </div>
+
+                <div class="page-post ml-2 mt-1">
+                    <div class="text">
+                        <span class="text-[16px] font-bold hover:underline hover:cursor-pointer">Harkirat Singh
+                        </span>
+                        <span class="text-sm  text-gray-600 cursor-pointer">
+                            @kirat_tw
+                            ·
+                            Mar 9, 2023
+                        </span>
+                        <br>
+                        <span class="text-sm block">Off to a million. Thankyou everyone ❤️</span>
+
+                    </div>
+
+                    <div class="img mr-3 mt-3">
+                        <img class="rounded-lg  border-[00.1px] hover:cursor-pointer border-gray-600"
+                            src="https://pbs.twimg.com/media/Fqv_gIIWcAAZHbk?format=jpg&name=small" alt="">
+                    </div>
+                    <div class="comment flex justify-around mt-2 text-gray-600 mx-2 justify-center items-center">
+                        <div class="comment-logo hover:cursor-pointer mr-2 flex">
+                            <span
+                                class="material-symbols-outlined  hover:bg-gray-900 hover:text-blue-500 hover:rounded-full p-2">
+                                comment
+                            </span>
+                            <div class="mr-1 mt-2 hover:text-gray-400">209</div>
+                        </div>
+                        <div class="repost flex hover:cursor-pointer  ">
+                            <span
+                                class="material-symbols-outlined hover:bg-gray-900 hover:text-blue-500 p-2 hover:rounded-full ">
+                                repeat
+                            </span>
+                            <div class="mt-2 hover:text-gray-400">49</div>
+                        </div>
+
+                        <div class="like flex hover:cursor-pointer  ">
+                            <span
+                                class="material-symbols-outlined hover:bg-gray-900 hover:text-blue-500 hover:rounded-full p-2">
+                                favorite
+                            </span>
+                            <div class="mt-2 hover:text-gray-400">5.2k</div>
+                        </div>
+                        <div class="poll flex hover:cursor-pointer hover:text-gray-400">
+                            <span
+                                class="material-symbols-outlined hover:bg-gray-900 hover:text-blue-500 hover:rounded-full p-2">
+                                bar_chart
+                            </span>
+                            <div class="mt-2">950k</div>
+                        </div>
+                        <div class="comment-side flex justify-center items-center pr-2 mb-1">
+                            <div class="save flex gap-2">
+                                <span class="material-symbols-outlined hover:text-gray-400 hover:cursor-pointer">
+                                    bookmark
+                                </span>
+                            </div>
+                            <div class="share">
+                                <span class="material-symbols-outlined hover:text-gray-400 hover:cursor-pointer">
+                                    ios_share
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+            <div class="public-posts flex border-[1px] border-y-gray-600 border-x-0">
+                <div class="public-logo ml-2 mt-2 w-16">
+                    <img class=" rounded-full cursor-pointer"
+                        src="https://pbs.twimg.com/profile_images/1856935099960627201/Wdgo4l9T_normal.jpg" alt="">
                 </div>
 
                 <div class="page-post ml-2 mt-1">
                     <div class="text">
                         <span class="text-[16px] font-bold hover:underline hover:cursor-pointer">coderandcreator
-                            </span>
-                            <span class="text-sm  text-gray-600 cursor-pointer">
-                                @coderandcreator
+                        </span>
+                        <span class="text-sm  text-gray-600 cursor-pointer">
+                            @coderandcreator
                             ·
                             13h
-                            </span>
-<br>
-                            <span class="text-sm block">I am busy pounding these days. </span>
-                               <span class="text-sm block "> Heads down and work.</span>
+                        </span>
+                        <br>
+                        <span class="text-sm block">I am busy pounding these days. </span>
+                        <span class="text-sm block "> Heads down and work.</span>
                     </div>
-                    
+
                     <div class="img mr-3 mt-3">
-                        <img class="rounded-lg  border-[00.1px] hover:cursor-pointer border-gray-600" src="https://pbs.twimg.com/media/Ggzha2uacAATi-J?format=jpg&name=small" alt="">
+                        <img class="rounded-lg  border-[00.1px] hover:cursor-pointer border-gray-600"
+                            src="https://pbs.twimg.com/media/Ggzha2uacAATi-J?format=jpg&name=small" alt="">
                     </div>
                     <div class="comment flex justify-around mt-2 text-gray-600 mx-2 justify-center items-center">
-<div class="comment-logo hover:cursor-pointer mr-2 ">
-    <span class="material-symbols-outlined  hover:text-gray-400">
-        comment
-        </span>
-</div>
-<div class="repost hover:cursor-pointer  hover:text-gray-400">
-    <span class="material-symbols-outlined">
-        repeat
-        </span>
-</div>
+                        <div class="comment-logo hover:cursor-pointer mr-2 ">
+                            <span
+                                class="material-symbols-outlined  hover:text-gray-40 hover:bg-gray-900 hover:text-blue-500 hover:rounded-full p-2">
+                                comment
+                            </span>
+                        </div>
+                        <div class="repost hover:cursor-pointer  hover:text-gray-400">
+                            <span
+                                class="material-symbols-outlined hover:bg-gray-900 hover:text-blue-500 hover:rounded-full p-2">
+                                repeat
+                            </span>
+                        </div>
 
-<div class="like hover:cursor-pointer  hover:text-gray-400">
-    <span class="material-symbols-outlined">
-        favorite
-        </span>  
-</div>
-<div class="poll hover:cursor-pointer">
-    <span class="material-symbols-outlined">
-        bar_chart
-        </span>
-</div>
-<div class="comment-side flex justify-center items-center pr-2 mb-1">
-    <div class="save flex gap-2">
-        <span class="material-symbols-outlined hover:text-gray-400 hover:cursor-pointer">
-            bookmark
-            </span>
-    </div>
-    <div class="share">
-        <span class="material-symbols-outlined hover:text-gray-400 hover:cursor-pointer">
-            ios_share
-            </span>
-    </div>
-</div>
+                        <div class="like hover:cursor-pointer  hover:text-gray-400">
+                            <span
+                                class="material-symbols-outlined hover:bg-gray-900 hover:text-blue-500 hover:rounded-full p-2">
+                                favorite
+                            </span>
+                        </div>
+                        <div class="poll hover:cursor-pointer hover:text-gray-400">
+                            <span
+                                class="material-symbols-outlined hover:bg-gray-900 hover:text-blue-500 hover:rounded-full p-2">
+                                bar_chart
+                            </span>
+                        </div>
+                        <div class="comment-side flex justify-center items-center pr-2 mb-1">
+                            <div class="save flex gap-2">
+                                <span class="material-symbols-outlined hover:text-gray-400 hover:cursor-pointer ">
+                                    bookmark
+                                </span>
+                            </div>
+                            <div class="share">
+                                <span class="material-symbols-outlined hover:text-gray-400 hover:cursor-pointer">
+                                    ios_share
+                                </span>
+                            </div>
+                        </div>
                     </div>
-                    
+
                 </div>
             </div>
+
+
+            <div class="public-posts flex">
+                <div class="public-logo ml-2 mt-2 w-16">
+                    <img class=" rounded-full cursor-pointer"
+                        src="https://pbs.twimg.com/profile_images/1856935099960627201/Wdgo4l9T_normal.jpg" alt="">
+                </div>
+
+                <div class="page-post ml-2 mt-1">
+                    <div class="text">
+                        <span class="text-[16px] font-bold hover:underline hover:cursor-pointer">coderandcreator
+                        </span>
+                        <span class="text-sm  text-gray-600 cursor-pointer">
+                            @coderandcreator
+                            ·
+                            13h
+                        </span>
+                        <br>
+                        <span class="text-sm block">I am busy pounding these days. </span>
+                        <span class="text-sm block "> Heads down and work.</span>
+                    </div>
+
+                    <div class="img mr-3 mt-3">
+                        <img class="rounded-lg  border-[00.1px] hover:cursor-pointer border-gray-600"
+                            src="https://pbs.twimg.com/media/Ggzha2uacAATi-J?format=jpg&name=small" alt="">
+                    </div>
+                    <div class="comment flex justify-around mt-2 text-gray-600 mx-2 justify-center items-center">
+                        <div class="comment-logo hover:cursor-pointer mr-2 ">
+                            <span
+                                class="material-symbols-outlined  hover:text-gray-400hover:bg-gray-900 hover:text-blue-500 hover:rounded-full p-2">
+                                comment
+                            </span>
+                        </div>
+                        <div class="repost hover:cursor-pointer  hover:text-gray-400">
+                            <span
+                                class="material-symbols-outlined hover:bg-gray-900 hover:text-blue-500 hover:rounded-full p-2">
+                                repeat
+                            </span>
+                        </div>
+
+                        <div class="like hover:cursor-pointer  hover:text-gray-400">
+                            <span
+                                class="material-symbols-outlined hover:bg-gray-900 hover:text-blue-500 hover:rounded-full p-2">
+                                favorite
+                            </span>
+                        </div>
+                        <div class="poll hover:cursor-pointer hover:text-gray-400">
+                            <span
+                                class="material-symbols-outlined hover:bg-gray-900 hover:text-blue-500 hover:rounded-full p-2">
+                                bar_chart
+                            </span>
+                        </div>
+                        <div class="comment-side flex justify-center items-center pr-2 mb-1">
+                            <div class="save flex gap-2">
+                                <span class="material-symbols-outlined hover:text-gray-400 hover:cursor-pointer">
+                                    bookmark
+                                </span>
+                            </div>
+                            <div class="share">
+                                <span class="material-symbols-outlined hover:text-gray-400 hover:cursor-pointer">
+                                    ios_share
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+
         </div>
 
 
-        <div class="third w-full">
+
+        <div class="third w-full hidden md:block">
             <div class="search m-3">
                 <input type="text" class="w-1/2 rounded-full bg-black text-white px-4 py-2 bg-gray-900  "
                     placeholder="Search">
             </div>
 
-            <div class="border-t-[0.5px] border-gray-600 rounded-t-lg p-4 text-white bg-black">
+            <div class=" sticky top-0 border-t-[0.5px] border-gray-600 rounded-t-lg p-4 text-white bg-black">
                 <h1 class="text-xl font-bold px-3">Whats Happening</h1>
 
                 <div class="item  hover:bg-gray-950 cursor-pointer px-3 p-3  rounded-xl">
@@ -263,6 +446,15 @@
                     </div>
 
                 </div>
+            </div>
+            <div class="terms sticky top-[84vh] m-3 text-xs text-gray-500 px-3  w-1/2 py-5   space-y-1">
+                <span class="hover:underline cursor-pointer mr-2">Terms of Service</span>
+                <span class="hover:underline cursor-pointer mr-2">Privacy Policy</span>
+                <span class="hover:underline cursor-pointer mr-2">Cookie Policy</span>
+                <span class="hover:underline cursor-pointer mr-2">Accessibility</span>
+                <span class="hover:underline cursor-pointer mr-2">Ads info</span>
+                <span class="hover:underline cursor-pointer mr-2">More</span>
+                <span class="hover:underline cursor-pointer mr-2">© 2024 X Corp.</span>
             </div>
         </div>
 </body>
